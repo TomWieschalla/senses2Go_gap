@@ -24,8 +24,8 @@ function init() {
     window.setInterval(setData, 500);
 
     function setData() {
-            $('#result1').html(x);
-            $('#result2').html(y);
-            $('#result3').html(z);
+        $('#result1').html(x);
+        $('#result2').html(y);
+        $('#result3').html(z);
     }
 }

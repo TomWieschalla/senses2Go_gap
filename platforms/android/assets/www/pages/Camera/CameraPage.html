@@ -3,8 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <title>Kamera</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" id="text/css" href="CameraStyle.css">
+    <script type="text/javascript" charset="utf-8" src="../../cordova.js"></script>
+    <link rel="stylesheet" href="../../lib/jquery/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="../../lib/jquery/jquery-3.1.1.min.js"></script>
+    <script src="../../lib/jquery/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 </head>
 <body>
-<input type="file" accept="image/*" capture="camera" />
+<p>
+    <img src="" id="myImage" width="300" height="600">
+</p>
+<p>
+    <input type="button" value="< Back" onclick="history.back(-1)" />
+</p>
 </body>
+<script>
+    document.addEventListener("deviceready", onDeviceReady, false);
+    function onDeviceReady() {
+        console.log(navigator.camera);
+        useCamera();
+    }
+
+    function useCamera() {
+        navigator.camera.getPicture(onSuccess, onFail, { quality: 50,
+            destinationType: Camera.DestinationType.FILE_URI });
+
+        function onSuccess(imageURI) {
+            var image = document.getElementById('myImage');
+            image.src = imageURI;
+        }
+
+        function onFail(message) {
+            alert('Failed because: ' + message);
+        }
+    }
+</script>
 </html>

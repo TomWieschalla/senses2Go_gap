@@ -24,8 +24,8 @@ function init() {
             });
         }
     } else {
-            alert("Proximity Sensor nicht Abrufbar");
-            window.history.back();
+        alert("Proximity Sensor nicht Abrufbar");
+        window.history.back();
     }
 
 

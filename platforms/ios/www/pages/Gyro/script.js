@@ -3,9 +3,9 @@ function init() {
 
     if (window.DeviceMotionEvent) {
         window.addEventListener('devicemotion', function(event) {
-           x = event.rotationRate.beta;
-           y = event.rotationRate.gamma;
-           z = event.rotationRate.alpha;
+            x = event.rotationRate.beta;
+            y = event.rotationRate.gamma;
+            z = event.rotationRate.alpha;
         });
     } else {
         alert("Gyroskop nicht nutzbar!")

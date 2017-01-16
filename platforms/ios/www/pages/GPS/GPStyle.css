@@ -15,3 +15,21 @@ p {
 .result {
     color: blue;
 }
+input {
+    background-color: #000E9B;
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    padding: 15px;
+    margin-top: 15px;
+    width: 200px;
+    margin: 17px;
+    display: block;
+}
+body {
+    margin-top: 30px;
+}
+p {
+    text-align: center;
+}

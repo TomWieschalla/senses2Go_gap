@@ -62,6 +62,29 @@
         <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
         <param name="onload" value="true" />
     </feature>
+    <feature name="GoogleMaps">
+        <param name="android-package" value="plugin.google.maps.GoogleMaps" />
+        <param name="onload" value="true" />
+        <param name="onreset" value="true" />
+    </feature>
+    <feature name="External">
+        <param name="android-package" value="plugin.google.maps.External" />
+    </feature>
+    <feature name="Geocoder">
+        <param name="android-package" value="plugin.google.maps.MyGeocoder" />
+    </feature>
+    <feature name="Gyroscope">
+        <param name="android-package" value="com.android.plugins.GyroscopeListener" />
+    </feature>
+    <feature name="Magnetometer">
+        <param name="android-package" value="org.apache.cordova.magnetometer.Magnetometer" />
+    </feature>
+    <feature name="Sensors">
+        <param name="android-package" value="com.fabiorogeriosj.plugin.Sensors" />
+    </feature>
+    <feature name="Proximity">
+        <param name="android-package" value="org.awokenwell.proximity.ProximitySensorListener" />
+    </feature>
     <name>senses2Go_gap</name>
     <description>
         Hello World sample application that responds to the deviceready event.
@@ -77,6 +100,7 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
+    <gap:plugin name="org.apache.cordova.media" />
     <icon density="ldpi" src="www/res/icon/android/drawable-ldpi-icon.png" />
     <icon density="mdpi" src="www/res/icon/android/drawable-mdpi-icon.png" />
     <icon density="hdpi" src="www/res/icon/android/drawable-hdpi-icon.png" />

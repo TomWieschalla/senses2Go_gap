@@ -66,6 +66,30 @@
         },
         "cordova-plugin-wkwebview-engine": {
             "PACKAGE_NAME": "de.adesso"
+        },
+        "com.mulhoon.cordova.barometer": {
+            "PACKAGE_NAME": "de.adesso"
+        },
+        "cordova-plugin-altimeter": {
+            "PACKAGE_NAME": "de.adesso"
+        },
+        "cordova-plugin-googlemaps": {
+            "API_KEY_FOR_IOS": "AIzaSyD6Xg0dtAdZq-z3QS9VwAlxAA7lDkd87YA",
+            "NSLOCATIONWHENINUSEUSAGEDESCRIPTION": "Show your location on the map",
+            "NSLOCATIONALWAYSUSAGEDESCRIPTION": "Trace your location on the map",
+            "PACKAGE_NAME": "de.adesso"
+        },
+        "cordova-plugin-gyroscope": {
+            "PACKAGE_NAME": "de.adesso"
+        },
+        "cordova-plugin-magnetometer": {
+            "PACKAGE_NAME": "de.adesso"
+        },
+        "com.fabiorogeriosj.sensors": {
+            "PACKAGE_NAME": "de.adesso"
+        },
+        "org.awokenwell.proximity": {
+            "PACKAGE_NAME": "de.adesso"
         }
     },
     "dependent_plugins": {
@@ -73,6 +97,9 @@
             "PACKAGE_NAME": "de.adesso"
         },
         "cordova-plugin-file": {
+            "PACKAGE_NAME": "de.adesso"
+        },
+        "com.googlemaps.ios": {
             "PACKAGE_NAME": "de.adesso"
         }
     }

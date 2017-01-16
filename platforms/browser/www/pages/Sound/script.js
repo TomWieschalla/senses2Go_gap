@@ -1,20 +1,30 @@
-$(document).ready(function(){
-    $("#jquery_jplayer_1").jPlayer({
-        ready: function () {
-            $(this).jPlayer("setMedia", {
-                title: "Guitar",
-                m4a: "http://www.jplayer.org/audio/m4a/Miaow-07-Bubble.m4a",
-                oga: "http://www.jplayer.org/audio/ogg/Miaow-07-Bubble.ogg"
-            });
+function init() {
+    document.addEventListener("deviceready", onDeviceReady, false);
+    function onDeviceReady() {
+        document.getElementById("play").disabled = false;
+    }
+}
+
+var my_media;
+
+function play() {
+    var audioElement = document.getElementById("guitar");
+    var url = audioElement.getAttribute('src');
+    my_media = new Media(url,
+        // success callback
+        function () {
+            alert("playAudio():Audio Success");
         },
-        cssSelectorAncestor: "#jp_container_1",
-        swfPath: "/js",
-        supplied: "m4a, oga",
-        useStateClassSkin: true,
-        autoBlur: false,
-        smoothPlayBar: true,
-        keyEnabled: true,
-        remainingDuration: true,
-        toggleDuration: true
-    });
-});
+        // error callback
+        function (err) {
+            alert("playAudio():Audio Error: " + err);
+        }
+    );
+    // Play audio
+    my_media.play();
+}
+
+function stopMedia() {
+    my_media.stop();
+    my_media.release();
+}

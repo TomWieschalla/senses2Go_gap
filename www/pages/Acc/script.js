@@ -1,22 +1,23 @@
 function init() {
-    var x,y,z;
-
-    if (window.DeviceMotionEvent) {
-        window.addEventListener('devicemotion', function(event) {
-            x = event.acceleration.x;
-            y = event.acceleration.y;
-            z = event.acceleration.z;
-        });
-    } else {
-        alert("Beschleunigungssensor nicht nutzbar!")
-        window.history.back();
+    document.addEventListener("deviceready", onDeviceReady, false);
+    function onDeviceReady() {
+        addAccelerometer();
     }
 
-    window.setInterval(setData, 500);
+}
 
-    function setData() {
-        $('#result1').html(x);
-        $('#result2').html(y);
-        $('#result3').html(z);
+function addAccelerometer() {
+    function onSuccess(acceleration) {
+        $('#result1').html(acceleration.x);
+        $('#result2').html(acceleration.y);
+        $('#result3').html(acceleration.z);
     }
+
+    function onError() {
+        alert('onError!');
+    }
+
+    var options = { frequency: 1000 };  // Update every 3 seconds
+
+    var watchID = navigator.accelerometer.watchAcceleration(onSuccess, onError, options);
 }

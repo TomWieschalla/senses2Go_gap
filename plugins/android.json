@@ -66,6 +66,28 @@
         },
         "cordova-plugin-wkwebview-engine": {
             "PACKAGE_NAME": "de.adesso"
+        },
+        "com.mulhoon.cordova.barometer": {
+            "PACKAGE_NAME": "de.adesso"
+        },
+        "cordova-plugin-altimeter": {
+            "PACKAGE_NAME": "de.adesso"
+        },
+        "cordova-plugin-googlemaps": {
+            "API_KEY_FOR_ANDROID": "AIzaSyDvD9ZTE09QtVCkqVso6nZQiQekqtr5f2s",
+            "PACKAGE_NAME": "de.adesso"
+        },
+        "cordova-plugin-gyroscope": {
+            "PACKAGE_NAME": "de.adesso"
+        },
+        "cordova-plugin-magnetometer": {
+            "PACKAGE_NAME": "de.adesso"
+        },
+        "com.fabiorogeriosj.sensors": {
+            "PACKAGE_NAME": "de.adesso"
+        },
+        "org.awokenwell.proximity": {
+            "PACKAGE_NAME": "de.adesso"
         }
     },
     "dependent_plugins": {

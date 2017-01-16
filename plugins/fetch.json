@@ -13,7 +13,9 @@
             "id": "cordova-plugin-camera@~2.1.1"
         },
         "is_top_level": true,
-        "variables": {}
+        "variables": {
+            "CAMERA_USAGE_DESCRIPTION": "your usage message"
+        }
     },
     "cordova-plugin-media-capture": {
         "source": {
@@ -171,6 +173,79 @@
         "source": {
             "type": "registry",
             "id": "cordova-plugin-wkwebview-engine"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "com.mulhoon.cordova.barometer": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/mulhoon/cordova-barometer",
+            "subdir": "."
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-altimeter": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-altimeter"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "com.googlemaps.ios": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/mapsplugin/cordova-plugin-googlemaps-sdk",
+            "subdir": "."
+        },
+        "is_top_level": false,
+        "variables": {}
+    },
+    "cordova-plugin-googlemaps": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/phonegap-googlemaps-plugin/cordova-plugin-googlemaps",
+            "subdir": "."
+        },
+        "is_top_level": true,
+        "variables": {
+            "API_KEY_FOR_ANDROID": "AIzaSyDvD9ZTE09QtVCkqVso6nZQiQekqtr5f2s",
+            "API_KEY_FOR_IOS": "AIzaSyD6Xg0dtAdZq-z3QS9VwAlxAA7lDkd87YA"
+        }
+    },
+    "cordova-plugin-gyroscope": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-gyroscope"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-magnetometer": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/sdesalas/cordova-plugin-magnetometer",
+            "subdir": "."
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "com.fabiorogeriosj.sensors": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/fabiorogeriosj/cordova-plugin-sensors.git",
+            "subdir": "."
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "org.awokenwell.proximity": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/awoken-well/cordova-plugin-proximity.git",
+            "subdir": "."
         },
         "is_top_level": true,
         "variables": {}

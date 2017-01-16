@@ -7,3 +7,9 @@ input {
     height: 100%;
     width: 100%;
 }
+body {
+    margin-top: 30px;
+}
+p {
+    text-align: center;
+}

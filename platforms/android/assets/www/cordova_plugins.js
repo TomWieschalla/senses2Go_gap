@@ -517,6 +517,62 @@ module.exports = [
             "navigator.notification",
             "navigator"
         ]
+    },
+    {
+        "id": "cordova-plugin-altimeter.Altimeter",
+        "file": "plugins/cordova-plugin-altimeter/www/Altimeter.js",
+        "pluginId": "cordova-plugin-altimeter",
+        "clobbers": [
+            "altimeter"
+        ]
+    },
+    {
+        "id": "cordova-plugin-googlemaps.cordova-plugin-googlemaps",
+        "file": "plugins/cordova-plugin-googlemaps/www/googlemaps-cdv-plugin.js",
+        "pluginId": "cordova-plugin-googlemaps",
+        "clobbers": [
+            "cordova-plugin-googlemaps"
+        ]
+    },
+    {
+        "id": "cordova-plugin-gyroscope.Orientation",
+        "file": "plugins/cordova-plugin-gyroscope/www/Orientation.js",
+        "pluginId": "cordova-plugin-gyroscope",
+        "clobbers": [
+            "Orientation"
+        ]
+    },
+    {
+        "id": "cordova-plugin-gyroscope.gyroscope",
+        "file": "plugins/cordova-plugin-gyroscope/www/gyroscope.js",
+        "pluginId": "cordova-plugin-gyroscope",
+        "clobbers": [
+            "navigator.gyroscope"
+        ]
+    },
+    {
+        "id": "cordova-plugin-magnetometer.main",
+        "file": "plugins/cordova-plugin-magnetometer/www/magnetometer.js",
+        "pluginId": "cordova-plugin-magnetometer",
+        "clobbers": [
+            "cordova.plugins.magnetometer"
+        ]
+    },
+    {
+        "id": "com.fabiorogeriosj.sensors.sensors",
+        "file": "plugins/com.fabiorogeriosj.sensors/www/sensors.js",
+        "pluginId": "com.fabiorogeriosj.sensors",
+        "clobbers": [
+            "sensors"
+        ]
+    },
+    {
+        "id": "org.awokenwell.proximity.proximity",
+        "file": "plugins/org.awokenwell.proximity/www/proximity.js",
+        "pluginId": "org.awokenwell.proximity",
+        "clobbers": [
+            "navigator.proximity"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -543,7 +599,14 @@ module.exports.metadata =
     "cordova-plugin-statusbar": "2.1.3",
     "cordova-plugin-vibration": "2.1.3",
     "cordova-plugin-whitelist": "1.2.2",
-    "cordova-plugin-wkwebview-engine": "1.1.1"
+    "cordova-plugin-wkwebview-engine": "1.1.1",
+    "com.mulhoon.cordova.barometer": "0.8.0",
+    "cordova-plugin-altimeter": "0.1.0",
+    "cordova-plugin-googlemaps": "1.4.0",
+    "cordova-plugin-gyroscope": "0.1.4",
+    "cordova-plugin-magnetometer": "1.0.0",
+    "com.fabiorogeriosj.sensors": "0.7.0",
+    "org.awokenwell.proximity": "1.1.0"
 };
 // BOTTOM OF METADATA
 });
